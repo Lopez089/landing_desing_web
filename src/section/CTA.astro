@@ -2,9 +2,13 @@
 import Form from "@components/form.astro";
 ---
 
-<section>
+<section
+  class="mx-auto w-full max-w-[320px] md:max-w-screen-sm lg:max-w-screen-lg py-[144px] sx:py-[80px] grid gap-16"
+>
   <div>
-    <h2>¿Listo para llevar tu presencia en línea al siguiente nivel?</h2>
+    <h2 class="text-h2Mobile md:text-h2Tablet lg:text-h2Desktop text-center">
+      ¿Listo para llevar tu presencia en línea al siguiente nivel?
+    </h2>
   </div>
   <div>
     <Form />
