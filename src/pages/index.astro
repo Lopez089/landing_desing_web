@@ -1,26 +1,22 @@
 ---
+import Page from "src/layout/page.astro";
 import Hero from "@section/hero.astro";
 import Service from "@section/service.astro";
 import Cta from "@section/CTA.astro";
 import Footer from "@section/footer.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link
-			rel="stylesheet"
-			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-		/>
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body class="text-black bg-bg">
-		<Hero />
-		<Service />
-		<Cta />
-		<Footer />
-	</body>
-</html>
+<!-- TODO: 
+favicon falta 
+component de parrafo 
+componente enlace
+usar esos componentes
+ voy por erro 404 crear pagina
+
+-->
+<Page title="Desarrollo Web Personalizado | Simón Web">
+	<Hero />
+	<Service />
+	<Cta />
+	<Footer />
+</Page>

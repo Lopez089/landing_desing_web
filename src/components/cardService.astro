@@ -1,12 +1,19 @@
-<div class="text-white grid gap-8 text-center">
-  <span class="material-symbols-outlined text-9xl"> compost</span>
+---
+const { description, icon } = Astro.props;
+---
+
+<article class="text-white grid gap-8 text-center">
+  <span class="material-symbols-outlined text-9xl"> {icon}</span>
   <div class="grid gap-4">
     <p>
-      ¿Te has sentido limitado por soluciones genéricas que no se adaptan a tus
-      necesidades únicas? ¿Has experimentado dificultades para destacar en un
-      mercado saturado? ¿La falta de personalización te ha impedido alcanzar tus
-      objetivos online?
+      {description}
     </p>
-    <a class="text-secondary-200 font-semibold" href="#">Saber mas ...</a>
+    <a
+      class="text-secondary-200 font-semibold"
+      rel="next"
+      href="#cta"
+      type="text/html"
+      >Saber mas ...
+    </a>
   </div>
-</div>
+</article>

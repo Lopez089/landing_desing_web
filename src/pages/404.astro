@@ -1,0 +1,20 @@
+---
+import H1 from "@elements/h1.astro";
+import Page from "src/layout/page.astro";
+---
+
+<Page title="Error 404 | Simón Web">
+  <main
+    class="mx-auto w-full max-w-[320px] md:max-w-screen-sm lg:max-w-screen-lg py-[144px] sx:py-[80px] grid gap-4 text-center"
+  >
+    <H1>Página no encontrada</H1>
+    <p class="text-base font-normal">
+      La página a la que está intentando acceder no existe. Por favor, vuelva a
+      intentarlo
+    </p>
+    <i class="text-4xl">🧐</i>
+    <a class="text-primary font-semibold" rel="next" href="/#" type="text/html"
+      >Volver a la página de inicio</a
+    >
+  </main>
+</Page>
